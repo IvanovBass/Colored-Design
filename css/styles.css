@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Pacifico);
+
+body
+{
+	margin: 1.5em 0;
+	padding: 0 ;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:0.8em;
+	background: #dea ;
+	background-image:url(../images/nature-background.jpg); 
+	background-repeat:no-repeat; 
+	background-position:center fixed; 
+	background-size:cover; 
+	/* l'image de background aurait pu être placée sur HTML */
+}
+
+/* Mise en page   */
+
+div#wrapper
+{
+	width: 96%; /*  s'adapte à la taille de l'écran */
+	margin: auto;  /* centre sur la page */
+	max-width:1200px;  /* ne dépassera pas la largeur de ... sur très grands écrans */ 
+	min-width:880px;  /* ne descendra pas en dessous de la largeur de ... sur petits écrans */
+	border: 8px solid #ab4 ;
+
+	}
+
+header
+{
+    width:100%;
+	height:260px;
+	background: url(../images/apple.jpg) no-repeat left top;
+	/* version raccourcie de la déclaration des background-image (facultatif) */
+	background-color:white;
+    padding:0;
+	}
+
+header h1, header h2 {
+	font-family: 'Pacifico', cursive;
+	font-weight:100;
+	color:#ab4;
+	margin:0;  /* Pour enlever les éventuels espaces indésirables autour des titres */
+	
+}
+
+header h1 { 
+	padding-left:320px;
+	padding-top:1em; /* Placement du titre au sein du header (décalage) */
+	font-size:4em;
+	}
+header h2 {
+	padding-left:320px;
+	padding-top:1em; /* Placement du titre au sein du header (décalage) */
+	font-size:1.5em;	
+}
+	
+
+
+nav {
+	font-family: 'Pacifico', cursive;
+	font-weight:100;
+	border-top: 1px solid #ab4;
+	border-bottom: 1px solid #ab4;
+	background-color: rgba(255, 255, 255, 0.8);
+/* 	permet un effet de transparence
+ */	}
+	
+nav ul  {
+	display:flex;  /* contexte flex > Les enfants directs (li) se placent en ligne donc côte à côte */
+	justify-content:space-around;  /* Les éléments sont répartis équitablement */
+	
+}	
+
+nav ul li {
+	list-style:none;
+}
+
+nav ul li a {
+text-decoration:none;
+font-size:1.5rem;
+color:#ab4;
+
+}
+
+section {
+	
+	display:flex; /* contexte flex > Les enfants directs (main et aside) se placent en ligne donc côte à côte */
+	padding:1.5em;
+	font-size:1em;
+	background-color:white;
+}
+
+main {
+	flex:3; /* déterminer une largeur est obligatoire (main et aside ne peuvent pas dépasser 100%) */ 
+	padding:1.5em;
+}
+
+aside {
+	flex:1;  /* déterminer une largeur est obligatoire (main et aside ne peuvent pas dépasser 100%) */ 
+	padding:1.5em;
+}
+
+
+/* Formatages */
+
+
+
+
+main h2
+{
+	font-size: 1.8em ;
+	color: #9b2 ;
+
+	}
+
+aside h3
+{
+	border-bottom: 1px solid #9b2 ;
+	font-size: 1.2em ;
+	color: #9b2 ;
+}
+
+main p, aside p
+{
+	text-align: justify ;
+	line-height: 1.7em ;
+}
+
+
+footer
+{
+	height:150px;
+	line-height:150px;  /* Pour un centrage vertical d'1 ligne de texte */
+	text-align: center ;
+	color:#8a0;
+	font-size:1em;	
+	border-top: 1px solid #ab4;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+
